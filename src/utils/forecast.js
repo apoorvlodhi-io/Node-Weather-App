@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             console.log(response.body.daily.data[0])
 
-            callback(undefined, response.body.daily.data[0].summary + ' It is currently ' + response.body.currently.temperature + ' degress out. High today is '+ response.body.daily.data[0].temperatureMax +' degrees. Low of today is '+ response.body.daily.data[0].temperatureMin +' degrees. There is a ' + response.body.currently.precipProbability + '% chance of rain.')
+            callback(undefined, response.body.daily.data[0].summary + ' It is currently ' + response.body.currently.temperature + ' degress out. High of today is '+ response.body.daily.data[0].temperatureMax +' degrees. Low of today is '+ response.body.daily.data[0].temperatureMin +' degrees. There is a ' + response.body.currently.precipProbability + '% chance of rain.')
         }
     })
 }
